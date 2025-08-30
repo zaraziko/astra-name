@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Astra Name — Подбор имени для ребёнка</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Astra Name</h1>
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#quiz">Подбор имени</a>
+        <a href="#how">Как это работает</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h2>Найдите идеальное имя для вашего малыша</h2>
+    <p>Учитываем психологию, нумерологию и ваши предпочтения</p>
+    <button onclick="document.getElementById('quiz').scrollIntoView({behavior:'smooth'})">Подобрать имя сейчас</button>
+</section>
+
+<section class="steps">
+    <h2>Как это работает</h2>
+    <div class="card"><h3>Шаг 1</h3><p>Заполните анкету о предпочтениях</p></div>
+    <div class="card"><h3>Шаг 2</h3><p>Получите список подходящих имен</p></div>
+    <div class="card"><h3>Шаг 3</h3><p>Выберите имя, которое наполнит жизнь малыша радостью</p></div>
+</section>
+
+<section id="quiz">
+    <h2>Анкета для подбора имени</h2>
+    <form id="nameForm">
+        <label>Пол ребёнка:</label>
+        <select name="gender" required>
+            <option value="">Выберите...</option>
+            <option value="boy">Мальчик</option>
+            <option value="girl">Девочка</option>
+            <option value="unknown">Не знаю</option>
+        </select>
+
+        <label>Планируемая дата рождения:</label>
+        <input type="date" name="birthdate" required>
+
+        <label>Длина имени:</label>
+        <select name="length" required>
+            <option value="">Выберите...</option>
+            <option value="short">Короткое</option>
+            <option value="medium">Среднее</option>
+            <option value="long">Длинное</option>
+        </select>
+
+        <label>Значение имени:</label>
+        <select name="meaning" required>
+            <option value="">Выберите...</option>
+            <option value="joy">Радость</option>
+            <option value="wisdom">Мудрость</option>
+            <option value="strength">Сила</option>
+            <option value="love">Любовь</option>
+        </select>
+
+        <label>Хотите уникальное имя?</label>
+        <select name="unique">
+            <option value="">Не важно</option>
+            <option value="rare">Редкое</option>
+            <option value="common">Популярное</option>
+        </select>
+
+        <label>Нумерология (число гармонии)</label>
+        <select name="numerology">
+            <option value="">Не учитывать</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+
+        <button type="button" onclick="generateNames()">Получить список имен</button>
+    </form>
+</section>
+
+<section class="results" id="results">
+    <h2>Ваш список подходящих имен</h2>
+    <div id="nameList" class="steps"></div>
+</section>
+
+<section id="how">
+    <h2>Методы подбора</h2>
+    <div class="card"><h3>Психология</h3><p>Имя влияет на характер и восприятие ребёнка.</p></div>
+    <div class="card"><h3>Нумерология</h3><p>Числа помогают выбрать гармоничное имя.</p></div>
+    <div class="card"><h3>Традиции</h3><p>Сочетаем современные и классические имена.</p></div>
+</section>
+
+<section id="contacts">
+    <h2>Контакты</h2>
+    <form>
+        <label>Имя:</label>
+        <input type="text" required>
+        <label>Email:</label>
+        <input type="email" required>
+        <label>Сообщение:</label>
+        <input type="text" required>
+        <button type="submit">Отправить</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Astra Name | Все права защищены</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+body { font-family: 'Arial', sans-serif; margin:0; background-color:#fff9f5; color:#333; }
+a { text-decoration:none; color:inherit; }
+header { background-color:#ffeef0; padding:20px 40px; display:flex; justify-content:space-between; align-items:center; }
+header h1 { font-family:'Cursive', sans-serif; color:#f78da7; }
+nav a { margin-left:20px; font-weight:bold; color:#f78da7; }
+.hero { background: linear-gradient(135deg, #fcefee, #f0f8ff); text-align:center; padding:80px 20px; }
+.hero h2 { font-size:2.5em; margin-bottom:20px; color:#f78da7; }
+.hero p { font-size:1.2em; margin-bottom:30px; }
+.hero button { padding:15px 30px; font-size:1em; background-color:#a2d5c6; border:none; border-radius:25px; cursor:pointer; color:#fff; }
+section { padding:60px 20px; max-width:1000px; margin:0 auto; }
+.steps, .why-us, .results { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+.card { background:#fff; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1); padding:20px; flex:1 1 250px; text-align:center; margin:10px; opacity:1; transition:opacity 0.6s ease, transform 0.3s ease; }
+.card:hover { transform:translateY(-5px); box-shadow:0 6px 15px rgba(0,0,0,0.15); }
+footer { background-color:#ffeef0; text-align:center; padding:30px 20px; margin-top:40px; }
+form label { display:block; margin:10px 0 5px; }
+form input, form select { padding:10px; width:100%; border-radius:8px; border:1px solid #ccc; margin-bottom:15px; }
+form button { background-color:#f78da7; color:#fff; border:none; padding:12px 25px; border-radius:25px; cursor:pointer; }
